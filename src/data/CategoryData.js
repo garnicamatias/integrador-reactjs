@@ -7,7 +7,7 @@ export const CategoryData = [
         alt: 'Categoría Sillones'
     },
     {
-        id: 'MLA436380',
+        id: 'MLA411493',
         name: 'Dormitorio',
         heroCategoryImg: '../../img/dormitorioHero.png',
         cardImg: '../../../img/category2.png',

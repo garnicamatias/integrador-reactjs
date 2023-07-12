@@ -16,7 +16,7 @@ const ItemCard = ({id}) => {
     <ItemCardWrapper>
     {data && 
     (
-        <Card maxW="250px" maxH='410px'>
+      <Card w="250px" h='410px'>
       <CardBody padding='0' alignContent='center'>
         <ImageContainer>
         <Image

@@ -16,10 +16,8 @@ const CategoryItems = (props) => {
     dispatch(fetchCategory(props.id))
     }, [])
     
-  
-  
     const { isLoading, data, error } = useSelector((state) => state.featuredCategory);
-  
+
 
 
   return (

@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const CategoryItemsWrapped = styled.div`
-    height: 60px;
     display: flex;
     flex-direction: column;
     padding: 0 100px 0 100px;
