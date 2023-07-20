@@ -7,6 +7,7 @@ import Checkout from '../pages/Checkout/Checkout'
 import Login from '../pages/Login/Login'
 import Register from '../pages/Register/Register'
 import Contact from '../pages/Contact/Contact'
+import Product from '../pages/Product/Product'
 
 const Routes = () => {
   return (
@@ -15,6 +16,7 @@ const Routes = () => {
         <Route path='category'>
           <Route path=":category" element={<Category />} />
         </Route>
+        <Route path='product' element={<Product />} />
         <Route path='checkout' element={<Checkout />} />
         <Route path='login' element={<Login />} />
         <Route path='register' element={<Register />} />

@@ -1,18 +1,18 @@
 import styled from 'styled-components'
 
-export const FeaturedWrapped = styled.div`
+export const FeaturedWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 16px 40px 16px;
-    background-color: var(--terciary);
+    background-color: var(--secondary);
     width: 100%;
     gap: 20px;
     height: auto;
 
     h2{
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
     }
 
     swiper-container{

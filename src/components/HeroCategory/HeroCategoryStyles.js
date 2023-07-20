@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const HeroCategoryWrapped = styled.div`
+export const HeroCategoryWrapper = styled.div`
     width: 100%;
     height: 21vw;
     background-size: contain;

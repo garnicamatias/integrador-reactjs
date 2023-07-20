@@ -16,28 +16,28 @@ export const HeroWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 70%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap:10px;
-    padding: 5% 20% 0 20%;
+    padding: 5% 40% 0 100px;
    };
 
 
    h1{
     font-weight: bold;
-    font-size: clamp(1.25rem, 0.5rem + 3.3333vw, 3rem);
+    font-size: clamp(1.375rem, 0.7857rem + 2.619vw, 2.75rem);
    };
 
    p{
-    font-size: clamp(0.75rem, 0.1071rem + 2.8571vw, 2.25rem);
+      font-size: clamp(0.75rem, 0.4286rem + 1.4286vw, 1.5rem);
    }
 
    .btnHero{
     background-color: var(--accent);
     color: white;
-    width: 66.6%;
-    height: 30px;
-    font-size: clamp(0.75rem, 0.1071rem + 2.8571vw, 1.75rem);
+    width: 320px;
+    height: 60px;
+    font-size: clamp(0.75rem, 0.5357rem + 0.9524vw, 1.25rem);
    }
 
    .btnHero:hover{

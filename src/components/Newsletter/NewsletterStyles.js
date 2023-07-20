@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const NewsletterWrapped = styled.div`
+export const NewsletterWrapper = styled.div`
     background-color: var(--accent);
-    padding: 35px 16px 35px 16px;
+    padding: 35px 100px 35px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,17 +10,19 @@ export const NewsletterWrapped = styled.div`
 
     h2{
         color: white;
-        font-size: 20px;
+        font-size: 32px;
         font-weight: 600;
+        text-align: center;
+        width: 50%;
     }
 
     Input{
         background-color: white;
-        max-width: 350px;
+        width: 50%;
     }
 
     Button{
-        width: 50%;
+        width: 33.3%;
         background-color: white;
         color: var(--accent);
     }

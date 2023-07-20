@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import { OpinionsWrapped } from './OpinionsStyles'
+import { OpinionsWrapper } from './OpinionsStyles'
 import { useSelector } from 'react-redux'
 import OpinionCard from './OpinionCard'
 import { register } from 'swiper/element/bundle';
@@ -31,7 +31,7 @@ const Opinions = () => {
 
 
   return (
-    <OpinionsWrapped>
+    <OpinionsWrapper>
       <h2>Nuestros clientes</h2>
         <swiper-container ref={swiperRef} navigation="true" pagination="true" autoplay-delay="3000" slides-per-view="3">
 				{
@@ -40,7 +40,7 @@ const Opinions = () => {
           })
         }
       </swiper-container>
-    </OpinionsWrapped>
+    </OpinionsWrapper>
   )
 }
 

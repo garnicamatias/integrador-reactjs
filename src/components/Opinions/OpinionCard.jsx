@@ -1,13 +1,13 @@
 import React from 'react'
-import { OpinionCardWrapped } from './OpinionsStyles'
+import { OpinionCardWrapper } from './OpinionsStyles'
 
 const OpinionCard = ({img, alt, name, opinion}) => {
   return (
-    <OpinionCardWrapped>
+    <OpinionCardWrapper>
         <img src={img} alt={alt} />
         <h3>{name}</h3>
         <p>{opinion}</p>
-    </OpinionCardWrapped>
+    </OpinionCardWrapper>
   )
 }
 

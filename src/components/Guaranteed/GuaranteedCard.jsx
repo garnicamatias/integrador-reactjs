@@ -1,16 +1,16 @@
 import React from 'react';
-import { GuaranteedCardWrapped } from './GuaranteedStyles';
+import { GuaranteedCardWrapper } from './GuaranteedStyles';
 
 export const GuaranteedCard = ({iconName, title, description}) => {
 
   return (
-    <GuaranteedCardWrapped>
+    <GuaranteedCardWrapper>
       <span 
         className="material-symbols-outlined"
       >{iconName}</span>
       <h3>{title}</h3>
       <p>{description}</p>
-    </GuaranteedCardWrapped>
+    </GuaranteedCardWrapper>
   );
 };
 

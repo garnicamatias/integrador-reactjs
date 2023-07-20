@@ -5,17 +5,19 @@ import storage from 'redux-persist/lib/storage';
 import guaranteedReducer from "./guaranteed/guaranteedSlice";
 import featuredCategoryReducer from "./featured/featuredCategorySlice"
 import opinionReducer from "./opinion/OpinionSlice"
+import cartReducer from "./cart/cartSlice"
 
 const reducers = combineReducers({
     guaranteed : guaranteedReducer,
     featuredCategory: featuredCategoryReducer,
     opinion : opinionReducer,
+    cart : cartReducer,
 });
 
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: [''],
+    whitelist: ['cart'],
 };
 
 const persistedReducers = persistReducer(persistConfig, reducers);

@@ -4,10 +4,10 @@ export const GlobalStyles = createGlobalStyle`
 
 :root {
   margin: 0 auto;
-  --primary: #E8DDCF;
-  --secondary: #D0BEA8;
-  --terciary: #CCD4D7;
-  --accent: #3E4F5F;
+  --primary: #EEE4D8;
+  --secondary: #D9E4E9;
+  --terciary: #EFCB9C;
+  --accent: #3D5C79;
 }
 
 p{

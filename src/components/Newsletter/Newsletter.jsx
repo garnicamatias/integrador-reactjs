@@ -1,12 +1,12 @@
 import React from 'react'
-import { NewsletterWrapped } from './NewsletterStyles'
+import { NewsletterWrapper } from './NewsletterStyles'
 import { Input } from '@chakra-ui/react'
 import { Button} from '@chakra-ui/react'
 
 
 const Newsletter = () => {
   return (
-    <NewsletterWrapped>
+    <NewsletterWrapper>
         <h2>
         Suscribite al newsletter 
         y recibí un 15% de descuento
@@ -15,7 +15,7 @@ const Newsletter = () => {
         <Button colorScheme='teal' variant='solid'>
             Subscribirme
         </Button>
-    </NewsletterWrapped>
+    </NewsletterWrapper>
   )
 }
 

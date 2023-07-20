@@ -1,5 +1,5 @@
 import React from 'react'
-import { CategoryItemsWrapped, Toolbar, CategoryItemsContent, Filter, CategoryItemsCards, SpinnerContainer } from './CategoryItemsStyles'
+import { CategoryItemsWrapper, Toolbar, CategoryItemsContent, Filter, CategoryItemsCards, SpinnerContainer } from './CategoryItemsStyles'
 import { Button } from '@chakra-ui/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
@@ -21,7 +21,7 @@ const CategoryItems = (props) => {
 
 
   return (
-    <CategoryItemsWrapped>
+    <CategoryItemsWrapper>
         <Toolbar>
             <p>Categorías {'>'} {props.name}</p>
             <Button>Ordenar</Button>
@@ -32,13 +32,13 @@ const CategoryItems = (props) => {
             </Filter>
             <CategoryItemsCards>
             {isLoading && (<SpinnerContainer><Spinner size='xl'/><p>Cargando</p></SpinnerContainer>)}
-				{data && data.slice(0,20).map((dataItem) => {
-            return <swiper-slide><ItemCard {...dataItem} key={dataItem?.id}/></swiper-slide>  
+				{data && data.slice(0,21).map((dataItem) => {
+            return <swiper-slide key={dataItem?.id}><ItemCard dataItem={dataItem}/></swiper-slide>  
             })}
 			{error && <h2 style={{ color: "#FA6C6C" }}>{error}</h2>}
             </CategoryItemsCards>
         </CategoryItemsContent>
-    </CategoryItemsWrapped>
+    </CategoryItemsWrapper>
   )
 }
 

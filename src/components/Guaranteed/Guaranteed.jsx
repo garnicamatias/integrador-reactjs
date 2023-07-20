@@ -1,5 +1,5 @@
 import React from 'react'
-import { GuaranteedWrapped } from './GuaranteedStyles'
+import { GuaranteedWrapper, GuaranteedCardsWrapper } from './GuaranteedStyles'
 import { useSelector } from 'react-redux'
 import GuaranteedCard from './GuaranteedCard'
 
@@ -8,14 +8,17 @@ const Guaranteed = () => {
   const guaranteed = useSelector(state => state.guaranteed.guaranteed)
 
   return (
-    <GuaranteedWrapped>
+    <GuaranteedWrapper>
       <h2>Te garantizamos:</h2>
+      <GuaranteedCardsWrapper>
       {
         guaranteed.map((guaranteed) => {
           return <GuaranteedCard {...guaranteed} key={guaranteed.id}/>
         })
       }
-    </GuaranteedWrapped>
+      </GuaranteedCardsWrapper>
+      
+    </GuaranteedWrapper>
   )
 }
 

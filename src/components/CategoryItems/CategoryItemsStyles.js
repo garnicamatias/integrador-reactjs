@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const CategoryItemsWrapped = styled.div`
+export const CategoryItemsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 100px 0 100px;
